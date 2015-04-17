@@ -33,6 +33,8 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'fasd' \
+  'osx' \
+  'syntax-highlighting' \
   'prompt'
 
 #
@@ -118,15 +120,19 @@ zstyle ':prezto:module:prompt' theme 'pure'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets'
 #   'pattern' \
 #   'cursor' \
 #   'root'
 #
 # Set syntax highlighting styles.
-# zstyle ':prezto:module:syntax-highlighting' styles \
+zstyle ':prezto:module:syntax-highlighting' styles \
+  'precommand' 'none' \
+  'path' 'none' \
+  'path_prefix' 'none' \
+  'path_approx' 'fg=yellow'
 #   'builtin' 'bg=blue' \
 #   'command' 'bg=blue' \
 #   'function' 'bg=blue'
