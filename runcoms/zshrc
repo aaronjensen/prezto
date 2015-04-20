@@ -13,3 +13,7 @@ fi
 # Customize to your needs...
 source ~/.shellrc
 eval "$(direnv hook zsh)"
+
+fpath=("$HOME/.zsh" $fpath)
+autoload -Uz git-escape-magic
+git-escape-magic
